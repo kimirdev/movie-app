@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  /* font-family: 'Times New Roman', Times, serif; */
+  width: 450px;
+  /* border: 2px solid black; */
+  box-shadow: 5px 5px 10px #e5e5e5;
+  margin: 0;
+  /* padding: 3px; */
+  margin-bottom: 35px;
+}
+
+.title {
+  margin-top: 12px;
+  margin-bottom: 7px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  width: 200px;
+}
+
+.date {
+  margin-top: 0;
+  margin-bottom: 7px;
+  color: #827E7E;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.overview {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.poster {
+  width: 180px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.poster .ant-image,
+.poster .ant-image-img {
+  width: 180px;
+  height: 280px;
+  margin: 0
+}
+
+.description {
+  margin-left: 20px;
+  width: 250px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.rating {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  margin: 0;
+  /* border: 2px solid #E9D100; */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.worst {
+  border: 2px solid #E90000;
+}
+
+.bad {
+  border: 2px solid #E97E00;
+}
+
+.ok {
+  border: 2px solid #E9D100;
+}
+
+.good {
+  border: 2px solid #66E900;
+}
+
+/* .description__header {
+  display: flex;
+} */
+
+.tags {
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding-right: 10px;
+}
+
+.ant-tag {
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 2px;
+}
+
+.ant-rate {
+  position: absolute;
+  bottom: 20px;
+}
+
+.description .ant-rate .ant-rate-star {
+  margin-right: 4px;
+}
+
+.imgSpinner {
+  text-align: center;
+  margin: 140px 90px;
+}
+
+.imgSpace {
+  width: 180px;
+  height: 280px;
+}
+
+/* .tag {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fafafa;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  padding: 3px;
+  margin-right: 8px;
+} */

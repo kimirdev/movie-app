@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter UI", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.app {
+  width: 1010px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: white;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.input {
+  width: 935px;
+  left: -15px;
+}
