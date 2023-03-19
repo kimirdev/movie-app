@@ -18,15 +18,7 @@ function truncate(str, n, useWordBoundary) {
 
 function MovieCard({ movie }) {
   const [rate, setRate] = useState(0)
-  const {
-    poster_path: path,
-    original_title: title,
-    overview,
-    vote_average: votes,
-    release_date: date,
-    id,
-    rating,
-  } = movie
+  const { poster_path: path, title, overview, vote_average: votes, release_date: date, id, rating } = movie
 
   useEffect(() => {
     setRate(rating)
@@ -35,11 +27,10 @@ function MovieCard({ movie }) {
   let genres = useContext(GenreContext)
   // eslint-disable-next-line react/destructuring-assignment
   genres = genres.filter((g) => movie.genre_ids.includes(g.id))
-
-  const description = overview.length > 120 ? truncate(overview, 120, true) : overview
-
   // eslint-disable-next-line react/destructuring-assignment
   const tags = genres.map((el) => <Tag key={el.id}>{el.name}</Tag>)
+
+  const description = overview.length > 120 ? truncate(overview, 120, true) : overview
 
   let votesClasses = 'rating '
   if (votes > 7) {
@@ -85,7 +76,6 @@ function MovieCard({ movie }) {
         </div>
         <p className="tags">{tags}</p>
         <p className="overview">{description}</p>
-
         <Rate value={rate} onChange={onRate} count="10" />
       </div>
     </div>

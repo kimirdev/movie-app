@@ -28,3 +28,27 @@ body {
   width: 935px;
   left: -15px;
 }
+
+@media (max-width: 1024px) {
+  .app {
+    width: 100vw;
+  }
+
+  .input {
+    width: 90vw;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    left: -15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .input {
+    width: 80vw;
+  }
+}
